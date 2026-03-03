@@ -37,13 +37,13 @@ console.log(utente1);
 
 // snack 3
 
-type Developer = {
+type Developer = Dipendente & {
   livelloEsperienza: 'Junior' | 'Mid' | 'Senior',
   linguaggi?: string[],
   certificazioni: string[]
 }
 
-type ProjectManager = {
+type ProjectManager = Dipendente & {
   teamSize: number | null,
   budget?: number,
   stakeholderPrincipali: string[]
