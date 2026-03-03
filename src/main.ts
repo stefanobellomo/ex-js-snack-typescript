@@ -11,4 +11,28 @@ if (typeof datoGenerico === 'string') {
   console.log('tipo non supportato');
 }
 
+// snack 2
 
+type Dipendente = {
+  nome: string,
+  cognome: string,
+  annoNascita: number,
+  sesso: 'M' | 'F'
+  anniDiServizio: number[]
+  readonly emailAziendale: 'pazza@mediaset.com',
+  contratto: 'indeterminato' | 'determinato' | 'freelance'
+}
+
+const utente1: Dipendente = {
+  nome: 'string',
+  cognome: 'signorini',
+  annoNascita: 1964,
+  sesso: 'F',
+  anniDiServizio: [1, 2, 4, 6, 7],
+  emailAziendale: 'pazza@mediaset.com',
+  contratto: 'indeterminato'
+}
+
+console.log(utente1);
+
+// snack 3
