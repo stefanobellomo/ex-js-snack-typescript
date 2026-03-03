@@ -36,3 +36,22 @@ const utente1: Dipendente = {
 console.log(utente1);
 
 // snack 3
+
+type Developer = {
+  livelloEsperienza: 'Junior' | 'Mid' | 'Senior',
+  linguaggi?: string[],
+  certificazioni: string[]
+}
+
+type ProjectManager = {
+  teamSize: number | null,
+  budget?: number,
+  stakeholderPrincipali: string[]
+}
+
+type Team = {
+  nome: string,
+  progettoAttuale: string | null,
+  budget: number,
+  membri: [ProjectManager, Developer, ...Developer[]]
+}
